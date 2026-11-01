@@ -1,0 +1,462 @@
+:root {
+    --cor-lilás: #8a4baf;
+    --cor-fundo: #ffffff;
+    --cor-texto: #1a1a1a;
+    --cor-alerta: #ff0000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    background-color: #8a4baf;
+    padding: 11px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.cabecalho a:hover, 
+.cabecalho button:hover {
+    background-color: #8a4baf !important; 
+    color: #ffffff !important;            
+    opacity: 1 !important;                
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #e0d0f0;
+}
+
+.conteudo {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 15px !important; 
+    margin-bottom: 15px !important; 
+}
+
+h2:first-child {
+    margin-top: 0 !important;
+}
+
+.login {
+    max-width: 400px;
+    width: 100%;
+    margin: 30px auto !important;
+    padding: 20px !important;
+    background-color: #f9f9f9 !important;
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.login h2 {
+    text-align: center;
+    color: var(--cor-lilás);
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login label {
+    display: block !important;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    font-size: 14px;
+}
+
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"] {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+    border-radius: 5px !important;
+    border: 1px solid #cccccc !important;
+    background-color: #ffffff !important;
+    color: #333333;
+    font-size: 14px;
+}
+
+.link_senha {
+    display: block !important;
+    width: 100% !important;
+    text-align: right !important;
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+}
+
+.link_senha a { 
+    color: var(--cor-lilás) !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+}
+
+.link_senha a:hover {
+    text-decoration: underline !important;
+}
+
+.recuperar_senha {
+    max-width: 400px;
+    width: 100%;
+    margin: 30px auto !important;
+    padding: 25px !important;
+    background-color: #f9f9f9 !important;
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.recuperar_senha h2 {
+    text-align: center;
+    color: var(--cor-lilás);
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.recuperar_senha label {
+    display: block !important;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    font-size: 14px;
+}
+
+.recuperar_senha input[type="text"],
+.recuperar_senha input[type="email"],
+.recuperar_senha input[type="password"] {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+    border-radius: 5px !important;
+    border: 1px solid #cccccc !important;
+    background-color: #ffffff !important;
+    color: #333333;
+    font-size: 14px;
+}
+
+.link_voltar {
+    text-align: center !important;
+    margin-top: 20px !important; 
+    margin-bottom: 5px !important;
+}
+
+.link_voltar a {
+    color: var(--cor-lilás) !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.link_voltar a:hover {
+    text-decoration: underline !important;
+}
+
+.cadastro {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto !important; 
+    padding: 20px 25px !important;
+    background-color: #f9f9f9 !important;
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cadastro h2 {
+    text-align: center;
+    color: var(--cor-lilás);
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 22px !important;
+}
+
+.cadastro input[type="text"],
+.cadastro input[type="email"],
+.cadastro input[type="password"] {
+    display: block !important;
+    width: 100% !important;
+    padding: 8px !important; 
+    margin-bottom: 10px !important; 
+    border-radius: 5px !important;
+    border: 1px solid #cccccc !important;
+    background-color: #ffffff !important;
+    color: #333333;
+    font-size: 14px;
+}
+
+.cadastro .termo-declaracao {
+    margin-bottom: 10px !important; 
+}
+
+.conteudo,
+.login,
+.cadastro,
+.recuperar_senha {
+    flex: 1;
+}
+
+.inicio {
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+.inicio h2 {
+    font-size: 32px;
+    color: var(--cor-lilás);
+}
+
+.mensagem {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--cor-texto);
+}
+
+.apresentacao,
+.acesso-rede,
+.conteudo-principal,
+.post-card {
+    background-color: #ffffff;
+    color: var(--cor-texto);
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.apresentacao h2,
+.acesso-rede h2,
+.conteudo-principal h2 {
+    text-align: center;
+    color: var(--cor-lilás);
+}
+
+.apresentacao p,
+.acesso-rede p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--cor-texto);
+}
+
+.container-foto {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.fotos {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: passarFotos 12s infinite;
+}
+
+.fotos img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes passarFotos {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-25%); }
+    50%, 70% { transform: translateX(-50%); }
+    75%, 95% { transform: translateX(-75%); }
+    100% { transform: translateX(0); }
+}
+
+.btn-panico {
+    background-color: var(--cor-alerta) !important;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    width: auto !important;
+}
+
+.btn-panico:hover {
+    background-color: #d90000 !important;
+}
+
+.rodape {
+    background-color: var(--cor-lilás) !important;
+    color: #111010 !important;
+    text-align: center;
+    padding: 11px 0 !important;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+body.pagina-comunidade {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 !important;
+}
+
+.comunidade-card {
+    max-width: 650px;
+    width: 90%;
+    margin: 20px auto !important;
+    padding: 30px !important;
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-comunidade h2 {
+    color: var(--cor-lilás) !important;
+    font-size: 28px !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    text-align: center;
+}
+
+.descricao-comunidade {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    color: #333333 !important;
+    margin-bottom: 20px !important;
+    text-align: center;
+}
+
+.aviso-seguranca {
+    background-color: #f9f4fc !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    border-left: 4px solid var(--cor-lilás) !important;
+    margin-bottom: 20px !important;
+    text-align: left !important;
+}
+
+.aviso-seguranca strong {
+    color: var(--cor-lilás) !important;
+    display: block !important;
+    margin-bottom: 5px !important;
+    font-size: 14px !important;
+}
+
+.aviso-seguranca span {
+    color: #555555 !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.conteudo-comunidade {
+    text-align: center !important;
+}
+
+.botao-principal-comunidade {
+    display: inline-block !important;
+    background-color: var(--cor-lilás) !important;
+    color: white !important;
+    padding: 12px 30px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    margin: 0 auto !important; 
+}
+
+.botao-principal-comunidade:hover {
+    background-color: #6a1bb1 !important;
+}
+
+.botao-secundario-comunidade {
+    display: inline-block !important;
+    background-color: #ffffff !important;
+    color: var(--cor-lilás) !important;
+    border: 2px solid var(--cor-lilás) !important;
+    padding: 12px 30px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.botao-secundario-comunidade:hover {
+    background-color: #f9f4fc !important;
+}
+
+body.pagina-comunidade .rodape {
+    margin-top: auto !important;
+}
+
+body.pagina-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fcf9fc;
+}
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff !important;
+    padding: 35px 30px !important;
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    box-sizing: border-box;
+}
